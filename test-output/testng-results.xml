@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55681" started-at="2016-07-26T06:41:22Z" finished-at="2016-07-26T06:42:17Z">
+    <groups>
+      <group name="CMDB">
+        <method signature="LC_GapScript_03.createIncident(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="createIncident" class="com.punchit.scripts.lc.LC_GapScript_03"/>
+      </group> <!-- CMDB -->
+    </groups>
+    <test name="Default test" duration-ms="55681" started-at="2016-07-26T06:41:22Z" finished-at="2016-07-26T06:42:17Z">
+      <class name="com.punchit.scripts.lc.LC_GapScript_03">
+        <test-method status="PASS" signature="getBrowserName(org.testng.ITestContext)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="getBrowserName" is-config="true" duration-ms="983" started-at="2016-07-26T12:11:22Z" finished-at="2016-07-26T12:11:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@131787b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowserName -->
+        <test-method status="FAIL" signature="createIncident(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="createIncident" duration-ms="51385" started-at="2016-07-26T12:11:23Z" data-provider="LC_GapScript_03" finished-at="2016-07-26T12:12:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TESM_CMDB_CFG_MGR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tesmtest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Assigned To = TESM_CMDB_CFG_MGR]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Active = true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TESM_CMDB_CFG_MGR]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Work in Progress]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[This is for Automation Testing for click Update]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[This is for Automation Testing for click Closed Complete]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Closed Complete]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:38)
+	at utils.Reporter.reportStep(Reporter.java:46)
+	at pages.MyTasksPage.checkMyTaskFields(MyTasksPage.java:28)
+	at com.punchit.scripts.lc.LC_GapScript_03.createIncident(LC_GapScript_03.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createIncident -->
+        <test-method status="PASS" signature="updateAndClose(org.testng.ITestContext)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="updateAndClose" is-config="true" duration-ms="2622" started-at="2016-07-26T12:12:15Z" finished-at="2016-07-26T12:12:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@131787b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAndClose -->
+      </class> <!-- com.punchit.scripts.lc.LC_GapScript_03 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

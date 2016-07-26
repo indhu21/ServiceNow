@@ -1,0 +1,25 @@
+public IncidentPage createIncidentWithAffectedUser1(String aUser, String repCust) {
+
+		
+		enterReportingCustomer1(repCust).
+		enterAffectedUserForFailure(aUser);
+	
+		if(clickById("Save_Id"))
+			Reporter.reportStep("The Reporting Customer: "+ repCust+" and Affected User: "+aUser +" is entered and ticket is saved successfully.", "SUCCESS");
+		//			Reporter.reportStep("The User: "+regUser+" able to save the ticket and both Reporting Customer and Affected User visible as expected.", "SUCCESS");
+		else
+			Reporter.reportStep("The Save Button is not clicked or not found.", "FAILURE");
+
+		return this;
+
+	}
+	
+	public IncidentPage isNotVisibleRepCustomer() {
+		
+		
+		if(!isExistByXpath("CREATEINC_RepCust_Xpath"))
+			Reporter.reportStep("The reporting customer is not found / displayed as expected.", "SUCCESS");
+		else
+			Reporter.reportStep("The reporting customer is found / displayed, hence failure.", "FAILURE");
+		return this;
+	}

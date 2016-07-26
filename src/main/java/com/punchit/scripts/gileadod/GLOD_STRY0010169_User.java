@@ -1,0 +1,59 @@
+package com.punchit.scripts.gileadod;
+
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pages.AlertsProfilesListPage;
+import pages.LoginPage;
+import pages.MenuPage;
+import testng.SuiteMethods;
+import utils.DataInputProvider;
+
+// for using ATU reporting -- added the listeners
+
+public class GLOD_STRY0010169_User extends SuiteMethods {
+	
+	@Test(dataProvider = "GLOD_STRY0010169_User")
+	public void testName(	String regUser, String regPwd, String Search, 
+							String Overrides, String NewSearch) {
+
+		try {
+			
+			snW.launchApp(browserName, true);
+		
+			MenuPage home = 
+					new LoginPage()
+					.loginAs(regUser, regPwd);
+				
+			AlertsProfilesListPage list = 
+						home.clickAlertProfiles();
+				
+				String alertProfile = 
+									list.getAlertProfileName();
+					
+							list.clickFirstAlertProfile(alertProfile)
+								.IsOverridesReadOnly(regUser);
+							
+							home.clickLogout();	
+							
+								status = "PASS";
+
+		} finally {
+			// close the browser
+			snW.quitBrowser();
+		}
+
+	}
+
+	@DataProvider(name = "GLOD_STRY0010169_User")
+	public Object[][] fetchData() throws IOException {
+		Object[][] arrayObject = DataInputProvider
+				.getSheet("GLOD_STRY0010169_User");
+		return arrayObject;
+	}
+
+	
+
+}

@@ -1,0 +1,27 @@
+public SPARCPortalPage enterPreferedLocAndPhone(String location, String phoneNUm) {
+
+		if(!enterAndChoose("SelfServiceView_PreLocation_Xpath", location))
+			Reporter.reportStep("The Preferred Location could not be entered, hence failure.","FAILURE");
+
+		if(!enterById("SelfServiceView_PrePhoneNum_Id", phoneNUm))
+			Reporter.reportStep("The Preferred Phone Number could not be entered, hence failure.","FAILURE");
+
+		if(clickById("Save_Id"))
+			Reporter.reportStep("The Preferred Location and Preferred Phone Number entered and saved successfully.","SUCCESS");
+		else
+			Reporter.reportStep("The Preferred Phone Number could not be entered, hence failure.","FAILURE");
+
+		return this;
+	}
+	public SPARCPortalPage verifyPreferedLocAndPhone(String location, String phoneNUm) {
+
+		if(!getAttributeByXpath("SelfServiceView_PreLocation_Xpath","value").equals(location))
+			Reporter.reportStep("The Preferred Location could not be matched, hence failure.","FAILURE");
+
+		if(getAttributeById("SelfServiceView_PrePhoneNum_Id","value").equals(phoneNUm))
+			Reporter.reportStep("The Preferred Location and Preferred Phone Number matched as expected.","SUCCESS");
+		else
+			Reporter.reportStep("The Preferred Phone Number could not be matched, hence failure.","FAILURE");
+
+		return this;
+	}

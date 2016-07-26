@@ -1,0 +1,20 @@
+[0506/111024:ERROR:settings.cc(261)] Settings magic is not 1129342067
+[0527/141359:ERROR:http_transport_win.cc(50)] WinHttpSendRequest: The server name or address could not be resolved  (0x2EE7)
+[0527/142648:ERROR:http_transport_win.cc(50)] WinHttpSendRequest: The server name or address could not be resolved  (0x2EE7)
+[0608/193324:ERROR:process_reader_win.cc(113)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights.  (0xc0000022)
+[0608/193324:ERROR:exception_snapshot_win.cc(57)] thread ID 2756 not found in process
+[0608/193324:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0622/163847:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0622/163847:ERROR:process_info.cc(542)] ReadProcessData failed
+[0622/163847:ERROR:process_info.cc(608)] range at 0x7ffd3000, size 0x230 fully unreadable
+[0622/163847:ERROR:process_reader_win.cc(232)] ReadMemory at 0x7ffd3000 of 560 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0622/163847:ERROR:process_snapshot_win.cc(349)] ReadMemory PEB
+[0622/163847:ERROR:process_reader_win.cc(232)] ReadMemory at 0x778aa000 of 5888 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0622/163847:ERROR:process_reader_win.cc(98)] process 6032 not found
+[0622/163847:ERROR:process_reader_win.cc(232)] ReadMemory at 0x134c374 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0622/163847:WARNING:process_snapshot_win.cc(102)] ReadMemory ExceptionInformation failed
+[0622/163847:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0622/163847:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558
+[0712/181631:ERROR:process_reader_win.cc(113)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights.  (0xc0000022)
+[0712/181631:ERROR:exception_snapshot_win.cc(57)] thread ID 6872 not found in process
+[0712/181631:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed

@@ -1,0 +1,2 @@
+cd c:\ServiceNow\lib
+java -jar selenium-server-standalone-2.53.0.jar -role wd -port 7777 -browser "browserName=internet explorer,platform=WINDOWS,maxInstances=3" -Dwebdriver.ie.driver=IEDriverServer.exe
