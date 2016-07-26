@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55681" started-at="2016-07-26T06:41:22Z" finished-at="2016-07-26T06:42:17Z">
+  <suite name="Default suite" duration-ms="56673" started-at="2016-07-26T07:41:32Z" finished-at="2016-07-26T07:42:29Z">
     <groups>
       <group name="CMDB">
         <method signature="LC_GapScript_03.createIncident(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="createIncident" class="com.punchit.scripts.lc.LC_GapScript_03"/>
       </group> <!-- CMDB -->
     </groups>
-    <test name="Default test" duration-ms="55681" started-at="2016-07-26T06:41:22Z" finished-at="2016-07-26T06:42:17Z">
+    <test name="Default test" duration-ms="56673" started-at="2016-07-26T07:41:32Z" finished-at="2016-07-26T07:42:29Z">
       <class name="com.punchit.scripts.lc.LC_GapScript_03">
-        <test-method status="PASS" signature="getBrowserName(org.testng.ITestContext)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="getBrowserName" is-config="true" duration-ms="983" started-at="2016-07-26T12:11:22Z" finished-at="2016-07-26T12:11:23Z">
+        <test-method status="PASS" signature="getBrowserName(org.testng.ITestContext)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="getBrowserName" is-config="true" duration-ms="1069" started-at="2016-07-26T13:11:32Z" finished-at="2016-07-26T13:11:33Z">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowserName -->
-        <test-method status="FAIL" signature="createIncident(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="createIncident" duration-ms="51385" started-at="2016-07-26T12:11:23Z" data-provider="LC_GapScript_03" finished-at="2016-07-26T12:12:15Z">
+        <test-method status="FAIL" signature="createIncident(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="createIncident" duration-ms="52351" started-at="2016-07-26T13:11:34Z" data-provider="LC_GapScript_03" finished-at="2016-07-26T13:12:26Z">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
               <![CDATA[java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:38)
 	at utils.Reporter.reportStep(Reporter.java:46)
-	at pages.MyTasksPage.checkMyTaskFields(MyTasksPage.java:28)
+	at pages.MyTasksPage.checkMyTaskFields(MyTasksPage.java:32)
 	at com.punchit.scripts.lc.LC_GapScript_03.createIncident(LC_GapScript_03.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -109,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIncident -->
-        <test-method status="PASS" signature="updateAndClose(org.testng.ITestContext)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="updateAndClose" is-config="true" duration-ms="2622" started-at="2016-07-26T12:12:15Z" finished-at="2016-07-26T12:12:17Z">
+        <test-method status="PASS" signature="updateAndClose(org.testng.ITestContext)[pri:0, instance:com.punchit.scripts.lc.LC_GapScript_03@ecd4b]" name="updateAndClose" is-config="true" duration-ms="2545" started-at="2016-07-26T13:12:26Z" finished-at="2016-07-26T13:12:29Z">
           <params>
             <param index="0">
               <value>

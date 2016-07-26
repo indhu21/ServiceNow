@@ -24,13 +24,15 @@ public class MyTasksPage extends ServiceNowWrappers{
 
 	public MyTasksPage checkMyTaskFields(String assTo, String state) {
 
-		if(!getAttributeById("MyTasks_Number_Id", "value").equals(""))
+		
+		if((getAttributeById("MyTasks_Number_Id", "value").equals("")))
 			Reporter.reportStep("The Number field is empty, hence failure", "FAILURE");
-
-		if(!getAttributeById("MyTasks_AssignedTo_Id", "value").equals(assTo))
+		System.out.println(getAttributeById("MyTasks_AssignedTo_Id", "value"));
+		System.out.println(assTo);
+		if(!(getAttributeById("MyTasks_AssignedTo_Id", "value").equals(assTo)))
 			Reporter.reportStep("The Assign To field is not matched with "+assTo+", hence failure", "FAILURE");
 
-		if(!getDefaultValueById("MyTasks_AssignedTo_Id").equals(state))
+		if(!(getDefaultValueById("MyTasks_AssignedTo_Id").equals(state)))
 			Reporter.reportStep("The State field is not matched with "+state+", hence failure", "FAILURE");
 		
 		if(isExistByXpath("MyTasks_CertificationTasks_Xpath"))
@@ -64,7 +66,7 @@ public class MyTasksPage extends ServiceNowWrappers{
 	public MyTasksPage getTaskNumber() {
 
 		taskNumber=getAttributeById("MyTasks_Number_Id", "value");
-
+		System.out.println(taskNumber);
 		if(!taskNumber.endsWith(""))
 			Reporter.reportStep("The Task Number is blank, hence failure", "FAILURE");
 
